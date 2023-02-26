@@ -1,0 +1,18 @@
+<view
+  wx:if="{{isShow}}"
+  class="pop-up"
+>
+
+  <view
+    wx:if="{{isMask}}"
+    class="mask"
+    bindtap="closePopup"
+  ></view>
+
+
+  <view class="content">
+    <slot></slot>
+  </view>
+
+
+</view>

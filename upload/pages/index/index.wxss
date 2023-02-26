@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  background-color: #fff;
+}
+
+.container .item .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  font-size: 30rpx;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eeeeee;
+}
+
+.container .item .head .arrow-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 40rpx;
+}
+
+.container .item .detail {
+  margin: 10rpx auto;
+  font-size: 25rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  height: 300rpx;
+  transition: height 1s;
+  -moz-transition: height 1s;
+  /* Firefox 4 */
+  -webkit-transition: height 1s;
+  /* Safari and Chrome */
+  -o-transition: height 1s;
+  /* Opera */
+  overflow: hidden;
+}
+
+.down {
+  transform: rotate(90deg);
+  transition: all 0.5s ease-in;
+}
+
+.right {
+  transform: rotate(0deg);
+  transition: all 0.5s ease-in;
+}
+
+.bg {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: red;
+}

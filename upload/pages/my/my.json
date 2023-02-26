@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "我的",
+  "navigationBarBackgroundColor": "#e97752",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "mp-cells": "/miniprogram_npm/weui-miniprogram/cells/cells",
+    "mp-cell": "/miniprogram_npm/weui-miniprogram/cell/cell",
+    "mp-form": "/miniprogram_npm/weui-miniprogram/form/form",
+    "mp-toptips": "weui-miniprogram/toptips/toptips"
+  }
+}

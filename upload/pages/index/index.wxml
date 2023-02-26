@@ -1,0 +1,36 @@
+<view class='container'>
+  <view
+    class='item'
+    wx:for="{{questList}}"
+    wx:key="index"
+  >
+    <view
+      class='head'
+      data-index='{{index}}'
+      catchtap='panel'
+    >
+      <view class='title'>{{item.title}}</view>
+
+      <image
+        class="arrow-icon {{item.t ? 'down':'right'}}"
+        src="/assets/images/common/arrow-right.png"
+      >
+      </image>
+
+    </view>
+    <view
+      class='detail'
+      style="height:{{ item.t?'':0}}"
+    >{{item.content}}</view>
+  </view>
+</view>
+
+
+<view class="{{red}}"></view>
+
+<ins-item list="{{list}}"></ins-item>
+
+<mp-dialog
+  show="{{true}}"
+  title="111"
+></mp-dialog>

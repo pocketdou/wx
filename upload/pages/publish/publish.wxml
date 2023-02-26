@@ -1,0 +1,152 @@
+<mp-toptips
+  msg="{{ error }}"
+  type="error"
+  show="{{ error }}"
+></mp-toptips>
+
+
+<mp-form
+  id="form"
+  models="{{formData}}"
+  rules="{{rules}}"
+>
+  <mp-cells title="发布活动">
+    <mp-cell
+      show-error
+      prop="type"
+      title="活动类型"
+    >
+      <picker
+        range="{{typeList}}"
+        range-key="name"
+        bindchange="handleTypePicker"
+      >
+        {{ typeList[formData.type - 1].name||'选择活动类型' }}
+      </picker>
+    </mp-cell>
+
+
+    <mp-cell
+      show-error
+      prop="title"
+      title="活动名称"
+    >
+      <input
+        type="text"
+        value="{{formData.title}}"
+        placeholder="填写活动名称"
+        data-field="title"
+        bindchange="handleInput"
+      />
+    </mp-cell>
+
+
+    <mp-cell title="活动图片">
+      <mp-uploader
+        style="z-index: 99999999;"
+        title=" "
+        delete
+        max-count="5"
+        bindselect="handleSelectCover"
+        binddelete="handleDeleteCover"
+        files="{{formData.cover}}"
+      ></mp-uploader>
+    </mp-cell>
+
+    <mp-cell title="活动详情">
+      <textarea
+        placeholder="请填写活动详情，不超过300字"
+        maxlength="300"
+        style="width: 100%;"
+        auto-height
+        data-field="desc"
+        bindinput="handleInput"
+      ></textarea>
+    </mp-cell>
+
+
+    <mp-cell
+      show-error
+      prop="address"
+      title="活动地点"
+    >
+      <input
+        data-field="address"
+        placeholder="填写活动地点"
+        value="{{formData.address}}"
+        bindchange="handleInput"
+      />
+    </mp-cell>
+
+    <mp-cell
+      show-error
+      prop="max"
+      title="人数限制"
+    >
+      <input
+        type="number"
+        placeholder="填0不限制人数"
+        value="{{formData.max}}"
+        bindchange="handleNumberInput"
+      />
+    </mp-cell>
+
+
+
+
+
+    <mp-cell
+      show-error
+      prop="order_time"
+      title="报名时间"
+    >
+      <date-picker
+        mode="dateminute"
+        bindchange="handleOrderTime"
+      >
+        <view class="show-date-time-box">{{formData.order_time||'请选择报名截止时间'}}
+        </view>
+      </date-picker>
+    </mp-cell>
+
+
+
+    <mp-cell
+      show-error
+      prop="start_time"
+      title="开始时间"
+    >
+      <date-picker
+        mode="dateminute"
+        bindchange="handleStartTime"
+      >
+        <view class="show-date-time-box">{{formData.start_time||'请选择开始时间'}}
+        </view>
+      </date-picker>
+    </mp-cell>
+
+    <mp-cell
+      show-error
+      prop="end_time"
+      title="结束时间"
+    >
+      <date-picker
+        mode="dateminute"
+        bindchange="handleEndTime"
+      >
+        <view class="show-date-time-box">{{formData.end_time||'请选择结束时间'}}
+        </view>
+      </date-picker>
+    </mp-cell>
+  </mp-cells>
+
+</mp-form>
+
+
+<button
+  class="btn"
+  bindtap="handleSubmit"
+>
+  提交
+</button>
+<view style="height: 200rpx;"></view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我的报名",
+  "usingComponents": {
+    "activity-item": "/components/activity-item/activity-item",
+    "pop-up": "/components/pop-up/pop-up"
+  }
+}

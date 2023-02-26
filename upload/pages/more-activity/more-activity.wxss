@@ -1,0 +1,31 @@
+.container .type {
+  position: sticky;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  height: 100rpx;
+}
+
+.type-item {
+  height: 50rpx;
+  padding: 10rpx 15rpx;
+  border-radius: 20rpx;
+  border: 1px solid #eee;
+  text-align: center;
+  line-height: 50rpx;
+  margin-right: 30rpx;
+  background-color: #fff;
+}
+
+.type-item.active {
+  background-color: #ff8800;
+  color: #fff;
+}
+
+.container .activity-llist,
+.container .search-list {
+  padding: 0 30rpx;
+}
+
+.container .search-list {
+  margin-top: 20rpx;
+}

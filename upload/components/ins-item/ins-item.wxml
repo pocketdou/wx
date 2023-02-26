@@ -1,0 +1,26 @@
+<view class='container'>
+  <view
+    class='item'
+    wx:for="{{list}}"
+    wx:key="index"
+  >
+    <view
+      class='head'
+      data-index='{{index}}'
+      catchtap='panel'
+    >
+      <view class='title'>{{item.title}}</view>
+
+      <image
+        class="arrow-icon {{item.t ? 'down':'right'}}"
+        src="/assets/images/common/arrow-right.png"
+      >
+      </image>
+
+    </view>
+    <view
+      class='detail'
+      style="height:{{ item.t?'':0}}"
+    >{{item.content}}</view>
+  </view>
+</view>

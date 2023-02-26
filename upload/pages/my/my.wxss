@@ -1,0 +1,49 @@
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: 80rpx 40rpx;
+  background-image: linear-gradient(to right, #eb6d59, #e68d44);
+}
+
+.user-info .avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.user-info .detail {
+  color: #fff;
+  margin-left: 30rpx;
+}
+
+.user-info .detail .nickname {
+  font-size: 38rpx;
+  font-weight: bold;
+}
+
+.user-info .detail .id {
+  font-size: 26rpx;
+  color: #eee;
+}
+
+.login {
+  margin-top: 100rpx;
+  padding: 30rpx;
+}
+
+.login .btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50rpx;
+}
+
+.login .btn-box .btn {
+  width: 70%;
+  padding: 30rpx;
+  background-color: #f80;
+  color: #fff;
+  text-align: center;
+  border-radius: 30rpx;
+}

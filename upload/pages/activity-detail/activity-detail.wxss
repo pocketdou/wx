@@ -1,0 +1,83 @@
+.cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  z-index: -999;
+}
+
+.container {
+  padding: 50rpx;
+  margin-top: 150rpx;
+}
+
+.container .info {
+  padding: 40rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-shadow: 5px 5px 10px #c3c3c3, -5px -5px 10px #fdfdfd;
+}
+
+.container .title {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.container .detail {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: gray;
+}
+
+.container .detail .icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+}
+
+.container .user {
+  margin: 30rpx 0;
+  padding: 15rpx 20rpx;
+  background-color: #eee;
+  color: gray;
+}
+
+.container .user .name {
+  color: #000;
+}
+
+.container .participant {
+  color: #f80;
+}
+
+.container .desc {
+  border-top: 1px solid #ccc;
+  margin-top: 40rpx;
+}
+
+.container .desc .title {
+  margin: 30rpx 0;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  color: #fff;
+  background-color: #f80;
+}
+
+.disabled {
+  background-color: #fafafa;
+  color: #d0d0d0;
+}

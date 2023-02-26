@@ -1,0 +1,20 @@
+<view class="my-order">
+  <activity-item
+    data-id="{{1}}"
+    isMy
+    bind:show="showPopup"
+  ></activity-item>
+</view>
+
+<pop-up
+  isShow="{{isShowCert}}"
+  bind:close="handleClosePopup"
+>
+
+  <view class="my-cert">
+    <image
+      class="cert-bg"
+      src="/assets/images/my/cert.png"
+    ></image>
+  </view>
+</pop-up>

@@ -1,0 +1,6 @@
+<map
+  class="map"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  show-location
+></map>

@@ -1,0 +1,12 @@
+/* pages/publish-activity/publish-activity.wxss */
+.btn {
+  margin-top: 50rpx;
+  width: 90%;
+  color: #fff;
+  padding: 20rpx;
+  background-color: #f80;
+}
+
+.weui-gallery__del {
+  padding-bottom: 100rpx;
+}

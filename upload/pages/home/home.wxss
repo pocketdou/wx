@@ -1,0 +1,75 @@
+.home {
+  box-sizing: border-box;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20rpx;
+}
+
+.location .icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.swiper-box {
+  background-color: #fff;
+  padding: 20rpx;
+  margin-top: 20rpx;
+}
+
+.swiper,
+.swiper-item {
+  height: 190px;
+}
+
+.swiper .banner-img {
+  border-radius: 20rpx;
+  width: 100%;
+}
+
+.wx-swiper-dots .wx-swiper-dot {
+  transition: all 0.6s;
+}
+
+.wx-swiper-dots .wx-swiper-dot-active {
+  width: 30rpx;
+  border-radius: 10rpx;
+  background: #f80;
+}
+
+.head,
+.head .title {
+  display: flex;
+}
+
+.head {
+  padding: 20rpx 30rpx;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.head .title .icon {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+
+.head .title .title-desc {
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.head .more {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.home-activity {
+  padding: 0 40rpx;
+  padding-bottom: 150rpx;
+}

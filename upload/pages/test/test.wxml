@@ -1,0 +1,29 @@
+<mp-navigation-bar
+  title="111"
+  loading
+></mp-navigation-bar>
+
+
+
+<!-- 画布图片 -->
+<canvas
+  id="myCanvas"
+  type="2d"
+  style="border: 1px solid; width: 345px; height: 230px; display: block; margin: 0 auto;text-align: center;"
+/>
+
+
+<view class="image-box">
+
+  <!-- 保存图片 -->
+  <image
+    src="{{paintUrl}}"
+    mode="widthFix"
+    show-menu-by-longpress="1"
+  ></image>
+</view>
+
+<button
+  type="primary"
+  bindtap="handleSave"
+>点击保存</button>

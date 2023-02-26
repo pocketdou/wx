@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "活动",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "mp-searchbar": "/miniprogram_npm/weui-miniprogram/searchbar/searchbar",
+    "activity-item": "/components//activity-item/activity-item"
+  }
+}

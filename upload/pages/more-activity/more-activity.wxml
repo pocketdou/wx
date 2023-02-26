@@ -1,0 +1,67 @@
+<mp-searchbar
+  placeholder="输入活动名称"
+  throttle="1000"
+  bindinput="handleInput"
+  bindclear="handleClear"
+></mp-searchbar>
+
+
+<view
+  wx:if="{{!inputValue}}"
+  class="container"
+>
+
+  <swiper
+    class="type"
+    display-multiple-items="3"
+    next-margin="30rpx"
+  >
+
+    <swiper-item
+      class="swiper-item"
+      wx:for="{{typeList}}"
+      wx:key="id"
+    >
+
+      <view
+        class="type-item {{selected === index?'active':''}}"
+        data-index="{{index}}"
+        data-id="{{item.id}}"
+        bindtap="handleSelected"
+      >
+        {{item.name}}
+      </view>
+    </swiper-item>
+  </swiper>
+
+
+  <view class="activity-llist">
+
+    <block
+      wx:for="{{10}}"
+      wx:key="id"
+    >
+      <activity-item bind:click="goToDetail"></activity-item>
+    </block>
+  </view>
+
+
+</view>
+
+
+<view
+  wx:else
+  class="container"
+>
+
+  <view class="search-list">
+    <block
+      wx:for="{{3}}"
+      wx:key="id"
+    >
+
+      <activity-item bind:click="goToDetail"> </activity-item>
+
+    </block>
+  </view>
+</view>

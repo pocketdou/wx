@@ -1,0 +1,56 @@
+<image
+  class="cover"
+  mode="widthFix"
+  src="{{activityDetail.cover}}"
+></image>
+
+
+<view class="container">
+
+  <view class="info">
+
+    <view class="title">{{activityDetail.title}}</view>
+
+    <view class="detail">
+      <image
+        class="icon"
+        src="/assets/images/activity/time.png"
+      />
+      {{activityDetail.start_time}}
+    </view>
+    <view class="detail">
+      <image
+        class="icon"
+        src="/assets/images/activity/address.png"
+      />
+      {{activityDetail.address}}
+    </view>
+
+    <view class="user">
+      由 <text class="name">{{activityDetail.user.name}}</text> 主办 / 发起
+    </view>
+
+    <view>
+      已报名：<text class="participant">{{count}}</text> / <text
+        class="participant">{{activityDetail.max||'不限人数'}}</text> 人
+    </view>
+
+    <view class="desc">
+      <view class="title">活动详情</view>
+      <view>
+        {{activityDetail.desc}}
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="btn-box">
+
+  <view
+    class="btn {{activityDetail.status!==1?'disabled':''}}"
+    bindtap="handleJoin"
+  >
+    {{btnActivityList[activityDetail.status]}}
+  </view>
+</view>

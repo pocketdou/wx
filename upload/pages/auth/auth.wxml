@@ -1,0 +1,92 @@
+<!-- <mp-uploader
+  class="upload"
+  title="上传身份证"
+  files="{{card}}"
+  bindselect="handleSelect"
+></mp-uploader> -->
+
+<mp-toptips
+  wx:if="{{error.length}}"
+  msg="{{ error }}"
+  type="error"
+  show="{{ error }}"
+></mp-toptips>
+
+
+
+<view class="title">上传身份证</view>
+<view
+  class="uploader"
+  bindtap="handleChooseImage"
+>
+  <view wx:if="{{!img}}">+</view>
+  <image
+    wx:else=""
+    src="{{img}}"
+    mode="widthFix"
+  ></image>
+</view>
+
+
+
+<mp-form
+  id="form"
+  models="{{formData}}"
+  rules="{{rules}}"
+>
+  <mp-cells>
+    <mp-cell
+      show-error
+      prop="realname"
+      title="姓名"
+    >
+      <input
+        type="text"
+        value="{{formData.realname}}"
+        data-field="realname"
+        placeholder="输入姓名"
+        bindinput="handleInput"
+      />
+    </mp-cell>
+
+    <mp-cell
+      show-error
+      prop="user_id"
+      title="身份证号码"
+    >
+      <input
+        type="text"
+        value="{{formData.user_id}}"
+        data-field="user_id"
+        placeholder="输入身份证号码"
+        bindinput="handleInput"
+      />
+    </mp-cell>
+  </mp-cells>
+
+</mp-form>
+
+<view
+  class="btn"
+  bindtap="handleAuth"
+>
+  提交认证
+</view>
+
+
+<pop-up isShow="{{isShowProgress}}">
+  <view class="progress-box">
+
+    <progress
+      wx:if="{{isShowProgress}}"
+      percent="100"
+      show-info
+      active
+      bindactiveend="handleProgress"
+    ></progress>
+
+    <view class="desc-box">
+      <view class="desc">正在加密传输认证...</view>
+    </view>
+  </view>
+</pop-up>

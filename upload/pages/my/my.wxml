@@ -1,0 +1,109 @@
+<mp-toptips
+  wx:if="{{error.length}}"
+  msg="{{ error }}"
+  type="error"
+  show="{{ error }}"
+></mp-toptips>
+
+
+
+
+<!-- 已登录 -->
+<view
+  wx:if="{{userInfo}}"
+  class="user-info"
+>
+  <image
+    class="avatar"
+    src="{{userInfo.avatar}}"
+  ></image>
+  <view class="detail">
+    <view class="nickname">{{userInfo.nickname}}</view>
+    <view class="id">id：{{userInfo.uid}}</view>
+  </view>
+</view>
+
+<!-- 未登录 -->
+<view
+  wx:if="{{!userInfo}}"
+  class="login"
+>
+
+  <mp-form
+    id="form"
+    models="{{formData}}"
+    rules="{{rules}}"
+  >
+    <mp-cells>
+      <mp-cell
+        title="用户名"
+        show-error
+        prop="username"
+      >
+        <input
+          type="text"
+          data-field="username"
+          placeholder="输入用户名"
+          bindinput="handleInput"
+        />
+      </mp-cell>
+
+      <mp-cell
+        title="密码"
+        show-error
+        prop="password"
+      >
+        <input
+          data-field="password"
+          type="password"
+          placeholder="输入密码"
+          bindinput="handleInput"
+        />
+      </mp-cell>
+
+    </mp-cells>
+  </mp-form>
+
+  <view class="btn-box">
+    <view
+      class="btn"
+      bindtap="handleLogin"
+    >登录</view>
+  </view>
+</view>
+
+
+<!-- 我的列表 -->
+<mp-cells wx:if="{{userInfo}}">
+  <mp-cell
+    title="实名认证"
+    link
+    bindtap="goToAuth"
+  ></mp-cell>
+
+
+  <mp-cell
+    title="我的报名"
+    link
+    bindtap="goToMyOrder"
+  ></mp-cell>
+
+  <mp-cell
+    title="我的发布"
+    link
+    bindtap="goToMyPublish"
+  ></mp-cell>
+
+
+  <mp-cell
+    title="使用说明"
+    link
+    bindtap="goToHelping"
+  ></mp-cell>
+
+  <mp-cell
+    title="授权管理"
+    link
+    bindtap="goToSetting"
+  ></mp-cell>
+</mp-cells>

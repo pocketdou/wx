@@ -1,0 +1,65 @@
+<view
+  class="home-activity-item"
+  data-id="22"
+  bindtap="click"
+>
+  <image
+    class="cover"
+    src="/assets/images/activity/2.png"
+  ></image>
+
+  <view class="desc">
+    <view class="info">
+      <view class="title">马拉松比赛</view>
+
+      <view class="user">
+        <image
+          class="time-icon"
+          mode="widthFix"
+          src="/assets/images/activity/user.png"
+        ></image>
+        李白
+      </view>
+
+      <view class="address">
+        <image
+          class="time-icon"
+          mode="widthFix"
+          src="/assets/images/activity/address.png"
+        ></image>
+
+        衡阳西湖公寓8楼
+      </view>
+
+      <view class="time">
+        <image
+          class="time-icon"
+          mode="widthFix"
+          src="/assets/images/activity/time.png"
+        ></image>
+        2022-12-25 09:00:00
+      </view>
+    </view>
+
+
+    <view
+      wx:if="{{!isMy}}"
+      class="status"
+    >报名中</view>
+
+    <view
+      wx:else
+      class="my-action"
+    >
+      <view
+        class="qrcode"
+        bindtap="show"
+      >
+        查看准考证
+      </view>
+
+
+    </view>
+    <view></view>
+  </view>
+</view>

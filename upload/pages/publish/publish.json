@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "发布活动",
+  "usingComponents": {
+    "mp-form": "weui-miniprogram/form/form",
+    "mp-cells": "weui-miniprogram/cells/cells",
+    "mp-cell": "weui-miniprogram/cell/cell",
+    "mp-toptips": "weui-miniprogram/toptips/toptips",
+    "mp-uploader": "weui-miniprogram/uploader/uploader",
+    "date-picker": "/components/date-picker/date-picker"
+  }
+}

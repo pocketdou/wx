@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "ins-item": "/components/ins-item/ins-item",
+    "mp-dialog": "weui-miniprogram/dialog/dialog"
+  }
+}

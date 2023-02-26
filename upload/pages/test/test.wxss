@@ -1,0 +1,6 @@
+/* pages/test/test.wxss */
+
+.image-box {
+  display: flex;
+  justify-content: center;
+}
