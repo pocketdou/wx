@@ -1,0 +1,20 @@
+<view class="tab-bar">
+  <view
+    wx:for="{{tabList}}"
+    wx:key="id"
+    data-id="{{item.id}}"
+    data-path="{{item.path}}"
+    catchtap="handleChangeTab"
+    class="tab-bar-item {{item.active?'active':''}}"
+  >
+    <image
+      class="icon {{item.special?'special':''}}"
+      src="/images/add.png"
+      mode="widthFix"
+    />
+    <view class="text">
+      {{item.text}}
+    </view>
+  </view>
+
+</view>

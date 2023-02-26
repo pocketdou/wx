@@ -1,0 +1,16 @@
+/* pages/reg/index.wxss */
+page{
+  padding: 25rpx;
+  box-sizing: border-box;
+}
+.tit{
+  font-size: 42rpx;
+  margin-bottom: 30rpx;
+  padding-left: 20rpx;
+}
+
+button{
+  display: block;
+  margin-top: 40rpx;
+  background: #d81e06 !important;
+}

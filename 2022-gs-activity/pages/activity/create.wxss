@@ -1,0 +1,21 @@
+/* pages/activity/create.wxss */
+
+page{
+  padding: 25rpx 25rpx 160rpx;
+  box-sizing: border-box;
+}
+.tit{
+  font-size: 42rpx;
+  margin-bottom: 30rpx;
+  padding-left: 20rpx;
+}
+
+.picker{
+  /* color: #777; */
+}
+
+button{
+  display: block;
+  margin-top: 40rpx;
+  background: #d81e06 !important;
+}

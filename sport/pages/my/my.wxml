@@ -1,0 +1,36 @@
+<view class="user-info">
+</view>
+
+
+<view class="menu">
+  <view class="menu-item">
+    我的报名
+  </view>
+  <view class="menu-item">
+    <button open-type="contact">联系我们</button>
+  </view>
+  <view class="menu-item">
+    <button open-type="feedback">意见反馈</button>
+  </view>
+  <view
+    class="menu-item"
+    bindtap="handleAbout"
+  >
+    关于我们
+  </view>
+  <view
+    class="menu-item"
+    catchtap="handleImages"
+  >
+    我的证书
+  </view>
+</view>
+
+
+
+<!-- <mp-dialog
+  class="dialog"
+  ext-class="dialogWarp"
+  bindbuttontap="hideDialog"
+  show="{{isShow}}"
+>111</mp-dialog> -->

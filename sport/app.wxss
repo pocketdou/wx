@@ -1,0 +1,5 @@
+@import "/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss";
+/* @import "weui-miniprogram/weui-wxss/dist/style/weui.wxss"; */
+page {
+  background-color: #e0e0e0;
+}

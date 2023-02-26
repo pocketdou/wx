@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "mp-dialog": "weui-miniprogram/dialog/dialog",
+    "mp-msg":"/miniprogram_npm/weui-miniprogram/msg/msg",
+    "mp-searchbar":"/miniprogram_npm/weui-miniprogram/searchbar/searchbar",
+    "mp-icon":"/miniprogram_npm/weui-miniprogram/icon/icon",
+    "mp-gallery": "/miniprogram_npm/weui-miniprogram/gallery/gallery",
+    "mp-badge": "/miniprogram_npm/weui-miniprogram/badge/badge"
+  }
+}

@@ -1,0 +1,62 @@
+<!--pages/myActivity/index.wxml-->
+<view class="lists">
+  <view class="tit-box">
+    <text>我的报名</text>
+  </view>
+
+  <mp-slideview
+    ext-class="list"
+    wx:for="{{activityList}}"
+    wx:key="index"
+    show="{{false}}"
+    buttons="{{slideButtons}}"
+    data-id="{{item.id}}"
+    data-index="{{index}}"
+    bindbuttontap="slideDel"
+    bindtap="activity_detail"
+    hover-class="active"
+    hover-stay-time="2000"
+  >
+    <view class="img-box">
+      <image
+        src="{{item.imgUrl}}"
+        mode="aspectFill"
+      ></image>
+    </view>
+    <view class="con-box">
+      <view class="lt">
+        <text class="t1">{{item.title}}</text>
+      </view>
+      <view class="rt">
+        <view
+          class="button"
+          bindtap="lookzs"
+        >查看证书</view>
+      </view>
+    </view>
+  </mp-slideview>
+</view>
+
+
+<mp-dialog
+  class="dialog"
+  ext-class="dialogWarp"
+  show="{{dialogShow}}"
+  bindbuttontap="hideDialog"
+  buttons="{{dialogButtons}}"
+>
+
+</mp-dialog>
+
+<view>
+  <canvas
+    canvas-id='canvas'
+    id='canvas'
+    class="canvas"
+    style="width: 750rpx; height: 660rpx;"
+  ></canvas>
+  <button
+    class="btn_poster"
+    bindtap="getPosterHandle"
+  >保存图片</button>
+</view>

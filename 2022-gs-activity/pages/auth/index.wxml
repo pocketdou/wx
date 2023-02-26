@@ -1,0 +1,25 @@
+<!--pages/auth/index.wxml-->
+<mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+
+<view class="form">
+  <view class="tit">实名认证</view>
+  <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+    <mp-cells>
+      <mp-cell title="上传身份证">
+        <mp-uploader data-field="files" files="{{formData.files}}" title="" bindselect="handbindselect"></mp-uploader>
+      </mp-cell>
+    </mp-cells>
+    <mp-cells>
+      <mp-cell title="用户名">
+        <input type="text" bindinput="formInputChange" data-field="username" value="{{username}}" />
+      </mp-cell>
+    </mp-cells>
+    <mp-cells>
+      <mp-cell title="身份证号码">
+        <input type="text" bindinput="formInputChange" data-field="idnumber" value="{{idnumber}}"/>
+      </mp-cell>
+    </mp-cells>
+    
+    <button type="primary" bindtap="submitForm">提交</button>
+  </mp-form>
+</view>

@@ -1,0 +1,47 @@
+<!--pages/activity/detail.wxml-->
+
+<view class="lists">
+  <view class="list" data-id="1">
+    <view class="img-box">
+      <image src="/assest/img/banner02.png" mode="aspectFill"></image>
+    </view>
+    <view class="con-box">
+      <view class="lt">
+        <text class="t1">2022绍兴上旬马拉松</text>
+        <text class="t2">报名进行中2天11小时4分34秒</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="details">
+  <view class="box" wx:for="{{detailList}}" wx:key="index">
+    <view class="titBox">{{item.title}}</view>
+    <view class="wrap">
+      <view class="conBox {{item.txtHidden?'show':'hide'}}">
+        {{item.con}}
+      </view>
+      <view class="arrow" bindtap="txtToggle" data-index="{{item.id-1}}">
+        <mp-icon icon="arrow" size="18" color="#666"></mp-icon>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="menu">
+  <view class="button {{disabled}}" bindtap="activity_apply">立即报名</view>
+</view>
+
+<!-- <mp-msg type="field" icon="success" title="温馨提示" desc="确定报名吗?">
+  <view slot="desc">恭喜您操作成功，您将获得下方权益
+        </view>
+        <view slot="extend">
+            <view>1. 说明1</view>
+            <view>2. 说明2</view>
+        </view>
+        <view slot="handle">
+            <button class="weui-btn" type="primary">主要操作</button>
+            <button class="weui-btn" type="default">辅助操作</button>
+        </view>
+
+</mp-msg> -->

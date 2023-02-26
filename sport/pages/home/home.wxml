@@ -1,0 +1,13 @@
+<view class="page__bd">
+  <mp-search
+    throttle="1000"
+    bindselectresult="selectResult"
+    search="{{handleSearch}}"
+  ></mp-search>
+</view>
+
+<image
+  src="/images/add.png"
+  mode="widthFix"
+  bindlongtap="handleSave"
+/>

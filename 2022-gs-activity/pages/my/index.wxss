@@ -1,0 +1,194 @@
+/* pages/my/index.wxss */
+
+
+.boxs {
+  position: relative;
+  padding: 25rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.boxs .head {
+  width: 100%;
+  border-radius: 10rpx;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 10rpx 0rpx #ccc;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.boxs .head .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxs .head .top .userinfos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxs .head .top .userinfos .user {
+  width: 120rpx;
+  height: 120rpx;
+  background: #E9E9E9;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxs .head .top .userinfos .user image {
+  width: 60rpx;
+  height: 72rpx;
+}
+
+.boxs .head .top .userinfos .user2 image {
+  width: 100%;
+  height: 100%;
+}
+
+.boxs .head .top .userinfos .name {
+  font-size: 30rpx;
+  color: #2A2A2A;
+  margin-left: 27rpx;
+}
+
+.boxs .head .top .buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 290rpx;
+}
+
+.boxs .head .top .button01 {
+  width: 120rpx;
+  height: 54rpx;
+  background: #666;
+  border-radius: 27rpx;
+  text-align: center;
+  line-height: 54rpx;
+  color: #fff;
+}
+.boxs .head .top .button01.active{
+  background: #d81e06;
+  color: #fff;
+}
+
+.boxs .head .top .button02 {
+  width: 120rpx;
+  height: 54rpx;
+  background: #666;
+  border-radius: 27rpx;
+  text-align: center;
+  line-height: 54rpx;
+  color: #fff;
+}
+.boxs .head .top .button02.active{
+  background: #d81e06;
+  color: #fff;
+}
+
+.boxs .head .top .tips{
+  position: absolute;
+  right: 30rpx;
+  top: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.boxs .head .top .tips image{
+  width: 22rpx;
+  height: 22rpx;
+  margin-right: 9rpx;
+}
+
+.boxs .head .top .tips text{
+  font-size: 22rpx;
+  color: #5459AE;
+}
+
+.boxs .bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23rpx;
+}
+
+.boxs .bottom .hr{
+  width: 1rpx;
+  height: 139rpx;
+  background: #BFBFBF;
+}
+
+.boxs .bottom .moneys{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.boxs .bottom .moneys .t1{
+  color: #F9A709;
+  font-size: 36rpx;
+  line-height: 1;
+}
+
+.boxs .bottom .moneys .t2{
+  color: #666666;
+  font-size: 26rpx;
+  line-height: 1;
+  margin-top: 22rpx;
+}
+
+.boxs .body{
+  margin-top: 26rpx;
+}
+
+.boxs .body .list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 88rpx;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 16rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 10rpx 0rpx #ccc;
+}
+
+.boxs .body .list.active{
+  background: #ddd;
+}
+
+
+.boxs .body .list:last-child{
+  margin-bottom: 0;
+}
+
+.boxs .body .list .lt{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.boxs .body .list .lt mp-icon{
+  margin-right: 15rpx;
+  margin-top: -8rpx;
+}
+
+.boxs .body .list text{
+  font-size: 26rpx;
+  color: #323232;
+}
+
+mp-badge{
+  margin-right: 20rpx;
+}

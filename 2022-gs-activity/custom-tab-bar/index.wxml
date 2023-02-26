@@ -1,0 +1,36 @@
+<!--custom-tab-bar/index.wxml-->
+<view class="tab-bar">
+  <view class="tab-bar-wrap">
+    <block
+      wx:for="{{list}}"
+      wx:key="index"
+    >
+      <view
+        wx:if="{{item.isSpecial}}"
+        data-path="{{item.pagePath}}"
+        bindtap="switchTab"
+      >
+        <view class="special-image">
+          <image
+            src="{{selected == index ? item.selectedIconPath : item.iconPath}}"
+          ></image>
+          <view class="text">{{item.text}}</view>
+        </view>
+      </view>
+      <view
+        wx:else
+        class="tab-bar-item item{{index}} {{selected == index ? 'active':''}}"
+        data-path="{{item.pagePath}}"
+        bindtap="switchTab"
+      >
+        <view class="wrap">
+
+          <image
+            src="{{selected == index ? item.selectedIconPath : item.iconPath}}"
+          ></image>
+          <view class="text">{{item.text}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

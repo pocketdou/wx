@@ -1,0 +1,13 @@
+<!--pages/use/index.wxml-->
+<view class="wrap">
+  <text class="tit">"参观清华"使用帮助</text>
+  <text class="con">
+    "参观清华"是清华大学校园参观预约系统的官方小程序，可为公众提供预约参观、效果导览等服务。
+  </text>
+  <image src="/assest/img/use01.jpg" mode="widthFix"></image>
+  <text class="tit">"参观清华"使用帮助</text>
+  <text class="con">
+    "参观清华"是清华大学校园参观预约系统的官方小程序，可为公众提供预约参观、效果导览等服务。
+  </text>
+  <image src="/assest/img/use02.jpg" mode="widthFix"></image>
+</view>

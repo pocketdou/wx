@@ -1,0 +1,114 @@
+<!--index.wxml-->
+<view class="position">
+  <mp-icon
+    type="field"
+    icon="location"
+    color="black"
+    size="15"
+  ></mp-icon>
+  <block wx:if="{{positonAdress}}">
+    <text bindtap="getlocationMap">{{positonAdress}}</text>
+  </block>
+  <block wx:else>
+    <text>请授权地理位置信息></text>
+  </block>
+</view>
+
+
+<view class="banners">
+  <swiper
+    autoplay="true"
+    bindchange="dots"
+    circular="true"
+    current="{{swiperCurrent}}"
+  >
+    <swiper-item
+      wx:for="{{swiperList}}"
+      wx:key="index"
+    >
+      <image
+        src="{{item}}"
+        mode="aspectFill"
+        data-index="{{index}}"
+        bindtap="previewImage"
+      ></image>
+    </swiper-item>
+  </swiper>
+  <view class="dots">
+    <view
+      class="dot {{current==0?'active':''}}"
+      data-index="0"
+      bindtap="dot"
+    ></view>
+    <view
+      class="dot {{current==1?'active':''}}"
+      data-index="1"
+      bindtap="dot"
+    ></view>
+    <view
+      class="dot {{current==2?'active':''}}"
+      data-index="2"
+      bindtap="dot"
+    ></view>
+  </view>
+  <mp-gallery
+    style="height: 100%;width: 100%;"
+    show="{{show}}"
+    imgUrls="{{swiperList}}"
+    current="{{current}}"
+    showDelete="{{false}}"
+    hideOnClick="{{true}}"
+  ></mp-gallery>
+</view>
+
+
+<view class="lists">
+  <view class="tit-box">
+    <text>赛事活动</text>
+    <view
+      class="link"
+      bindtap="activity_link"
+    >更多</view>
+  </view>
+  <view
+    class="list"
+    wx:for="{{activityList}}"
+    wx:key="index"
+    data-id="{{item.id}}"
+    bindtap="activity_detail"
+    hover-class="active"
+    hover-stay-time="2000"
+  >
+    <view class="img-box">
+      <image
+        src="{{item.imgUrl}}"
+        mode="aspectFill"
+      ></image>
+      <view class="status">报名中</view>
+    </view>
+    <view class="con-box">
+      <view class="lt">
+        <text class="t1">{{item.title}}</text>
+        <text class="t2">{{item.time}}</text>
+      </view>
+      <view class="rt">
+        <view class="button">立即参与</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<mp-dialog
+  class="dialog"
+  ext-class="dialogWarp"
+  show="{{dialogShow}}"
+  bindbuttontap="hideDialog"
+  buttons="{{dialogButtons}}"
+>
+  <view class="img">
+    <image
+      src="/assest/img/haibao.png"
+      mode="widthFix"
+    ></image>
+  </view>
+</mp-dialog>

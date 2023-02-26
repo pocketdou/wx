@@ -1,0 +1,95 @@
+/* pages/activity/list.wxss */
+
+.search{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.lists{
+  padding: 30rpx;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.lists .tit-box{
+  margin-bottom: 10rpx;
+}
+
+.lists .tit-box text{
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.lists .list{
+  background: #fff;
+  box-shadow: 0 0 6px 5px #E6E8ED;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+.lists .list.active .con-box .rt .button{
+  background: #d81e06;
+  color: #fff;
+}
+
+.lists .list .img-box{
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+}
+
+.lists .list .img-box .status{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 69px;
+  height: 23px;
+  background: linear-gradient(222deg,#F50E0E,#F54E5E);
+  border-radius: 23px;
+  color: #fff;
+  font-size: 24rpx;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lists .list .img-box image{
+  width: 100%;
+  height: 100%;
+}
+
+.lists .list .con-box{
+  padding: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lists .list .con-box .t1{
+  font-size: 32rpx;
+  display: block;
+}
+
+.lists .list .con-box .t2{
+  font-size: 20rpx;
+  display: block;
+  margin-top: 10rpx; 
+  color: #d81e06;
+}
+
+.lists .list .con-box .rt .button{
+  width: 60px;
+  height: 36px;
+  border-radius: 5px;
+  border: 1px solid #B1121F;
+  font-size: 20rpx;
+  color: #B1121F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

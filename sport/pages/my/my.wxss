@@ -1,0 +1,41 @@
+page {
+  background-color: #f6f6f4;
+  box-sizing: border-box;
+}
+
+.user-info {
+  height: 20vh;
+  width: 100%;
+  background-color: #ff5700;
+}
+
+.menu {
+  margin: 15rpx;
+  font-size: 30rpx;
+}
+
+.menu .menu-item {
+  padding: 20rpx;
+  margin-top: 10rpx;
+  background-color: #fff;
+}
+
+.menu .menu-item button {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 30rpx;
+  width: 100%;
+}
+.menu .menu-item button::after {
+  border: none;
+}
+
+.weui-animate-fade-in {
+  position: absolute;
+  z-index: 9999999;
+}

@@ -1,0 +1,17 @@
+{
+  "usingComponents": {
+    "mp-form": "/miniprogram_npm/weui-miniprogram/form/form",
+    "mp-toptips":"/miniprogram_npm/weui-miniprogram/toptips/toptips",
+    "mp-cells": "/miniprogram_npm/weui-miniprogram/cells/cells",
+    "mp-cell": "/miniprogram_npm/weui-miniprogram/cell/cell",
+    "mp-checkbox-group": "weui-miniprogram/checkbox-group/checkbox-group",
+    "mp-checkbox": "weui-miniprogram/checkbox/checkbox",
+    "mp-uploader": "weui-miniprogram/uploader/uploader",
+    "mp-icon":"/miniprogram_npm/weui-miniprogram/icon/icon",
+    "mp-slideview": "/miniprogram_npm/weui-miniprogram/slideview/slideview"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "赛事活动发布",
+  "navigationBarTextStyle": "black"
+}

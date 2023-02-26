@@ -1,0 +1,83 @@
+<!--pages/my/index.wxml-->
+
+<view class="boxs">
+  <view class="head">
+    <view class="top">
+      <block wx:if="{{!userinfo}}">
+        <view class="userinfos" bindtap="userinfo">
+          <view class="user">
+            <image src="/assest/img/icon02.png" mode="aspectFit"></image>
+          </view>
+          <view class="name">
+            微信用户
+          </view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="userinfos">
+          <view class="user user2">
+            <image src="{{userinfo.avatar}}" mode="aspectFit"></image>
+          </view>
+          <view class="name">
+            ID:{{userinfo.uid}}
+          </view>
+        </view>
+      </block>
+      <view class="buttons">
+        <view class="button01" bindtap="login" hover-class="active" hover-stay-time="2000">登录</view>
+        <view class="button02" bindtap="reg" hover-class="active" hover-stay-time="2000">注册</view>
+      </view>
+    </view>
+      
+  </view>
+  <view class="body">
+    <view class="list" bindtap="myActivity" hover-class="active" hover-stay-time="2000">
+      <view class="lt">
+        <mp-icon icon="me" size="20"></mp-icon>
+        <text>我的报名</text>
+      </view>
+      <view class="rt">
+        <mp-badge content="2"></mp-badge>
+        <mp-icon icon="arrow" size="14"></mp-icon>
+      </view>
+    </view>
+    <!-- <view class="list" bindtap="" hover-class="active" hover-stay-time="2000">
+      <view class="lt">
+        <mp-icon icon="setting" size="20"></mp-icon>
+        <text>我的发布</text>
+      </view>
+      <mp-icon icon="arrow" size="14"></mp-icon>
+    </view> -->
+    <view class="list" bindtap="auth" hover-class="active" hover-stay-time="2000">
+      <view class="lt">
+        <mp-icon icon="setting" size="20"></mp-icon>
+        <text>实名认证</text>
+      </view>
+      <mp-icon icon="arrow" size="14"></mp-icon>
+    </view>
+
+    <!-- <view class="list" bindtap="" hover-class="active" hover-stay-time="2000">
+      <view class="lt">
+        <mp-icon icon="setting" size="20"></mp-icon>
+        <text>左滑组件</text>
+      </view>
+      <mp-icon icon="arrow" size="14"></mp-icon>
+    </view> -->
+
+    <view class="list" bindtap="use" hover-class="active" hover-stay-time="2000">
+      <view class="lt">
+        <mp-icon icon="copy" size="20"></mp-icon>
+        <text>使用说明</text>
+      </view>
+      <mp-icon icon="arrow" size="14"></mp-icon>
+    </view>
+
+    <view class="list" bindtap="clear" hover-class="active" hover-stay-time="2000">
+      <view class="lt">
+        <mp-icon icon="refresh" size="20"></mp-icon>
+        <text>清理缓存</text>
+      </view>
+      <mp-icon icon="arrow" size="14"></mp-icon>
+    </view>
+  </view>
+</view>

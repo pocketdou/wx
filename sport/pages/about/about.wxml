@@ -1,0 +1,19 @@
+<view
+  class="card"
+  data-index="{{index}}"
+  wx:for="{{aboutList}}"
+  wx:key="index"
+  bindtap="handleShow"
+>
+  <view class="title">
+    <text>Q:我们是做什么的</text>
+    <image
+      class="{{item.active?'active':''}}"
+      src="/images/arrow-right.png"
+      mode="widthFix"
+    />
+  </view>
+  <view class="content {{item.active?'active':''}}">
+    iujshdjds刻录机哦i说{{item.text}}
+  </view>
+</view>

@@ -1,0 +1,200 @@
+/**index.wxss**/
+page {
+  padding-bottom: 100rpx;
+}
+.banners {
+  position: relative;
+}
+.banners swiper {
+  width: 709rpx;
+  height: 315rpx;
+  margin: 25rpx auto 0;
+  border-radius: 10rpx;
+  overflow: hidden;
+  box-shadow: 0 0 10rpx 0rpx #ccc;
+}
+
+.banners image {
+  width: 100%;
+  height: 100%;
+}
+
+.banners .dots {
+  position: absolute;
+  width: 100%;
+  right: 60rpx;
+  bottom: 15rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.banners .dot {
+  width: 15rpx;
+  height: 15rpx;
+  background: #333;
+  border-radius: 50%;
+  margin: 0 8rpx;
+  opacity: 0.8;
+}
+.banners .dot.active {
+  width: 20rpx;
+  height: 20rpx;
+  background: #d81e06;
+  opacity: 1;
+}
+
+.lists {
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.lists .tit-box {
+  margin-bottom: 10rpx;
+}
+
+.lists .tit-box text {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.lists .list {
+  background: #fff;
+  box-shadow: 0 0 6px 5px #e6e8ed;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+.lists .list.active .con-box .rt .button {
+  background: #d81e06;
+  color: #fff;
+}
+
+.lists .list .img-box {
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+}
+
+.lists .list .img-box .status {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 69px;
+  height: 23px;
+  background: linear-gradient(
+    222deg,
+    #f50e0e,
+    #f54e5e
+  );
+  border-radius: 23px;
+  color: #fff;
+  font-size: 24rpx;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lists .list .img-box image {
+  width: 100%;
+  height: 100%;
+}
+
+.lists .list .con-box {
+  padding: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lists .list .con-box .t1 {
+  font-size: 32rpx;
+  display: block;
+}
+
+.lists .list .con-box .t2 {
+  font-size: 20rpx;
+  display: block;
+  margin-top: 10rpx;
+  color: #d81e06;
+}
+
+.lists .list .con-box .rt .button {
+  width: 60px;
+  height: 36px;
+  border-radius: 5px;
+  border: 1px solid #b1121f;
+  font-size: 20rpx;
+  color: #b1121f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lists .tit-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lists .tit-box .link {
+  color: #666;
+}
+
+.position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 24rpx;
+  margin-top: 22rpx;
+}
+
+.weui-gallery__img__wrp {
+  box-shadow: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  height: auto !important;
+  border-radius: 0 !important;
+}
+
+.weui-gallery {
+  z-index: 9999;
+}
+
+.dialog {
+  z-index: 99999;
+  position: absolute;
+}
+
+.dialogWarp {
+  padding: 0;
+}
+.dialogWarp .weui-dialog {
+  background: none;
+}
+.dialogWarp .img image {
+  width: 60vw;
+  height: 70vh;
+}
+
+.dialogWarp .weui-dialog__hd {
+  padding: 0;
+}
+
+.dialogWarp .weui-dialog__bd {
+  padding: 0;
+  /* margin-bottom: 0; */
+}
+.dialogWarp .weui-dialog__ft {
+  display: block;
+}
+.dialogWarp .weui-dialog__btn {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50rpx;
+  width: 100rpx;
+  height: 100rpx;
+  padding: 0;
+  line-height: 100rpx;
+  display: inline-block;
+}

@@ -1,0 +1,23 @@
+<!--pages/activity/list.wxml-->
+
+<view class="search">
+  <mp-searchbar search="{{search}}" bindselectresult="handselectresult"></mp-searchbar>
+</view>
+
+<view class="lists">
+  <view class="list" wx:for="{{activityList}}" wx:key="index" data-id="{{item.id}}" bindtap="activity_detail" hover-class="active" hover-stay-time="2000">
+    <view class="img-box">
+      <image src="{{item.imgUrl}}" mode="aspectFill"></image>
+      <view class="status">报名中</view>
+    </view>
+    <view class="con-box">
+      <view class="lt">
+        <text class="t1">{{item.title}}</text>
+        <text class="t2">{{item.time}}</text>
+      </view>
+      <view class="rt">
+        <view class="button">立即参与</view>
+      </view>
+    </view>
+  </view>
+</view>

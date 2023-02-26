@@ -1,0 +1,32 @@
+/* pages/use/index.wxss */
+page{
+  padding: 25rpx;
+  box-sizing: border-box;
+}
+.wrap{
+  /* background: red; */
+  box-shadow: 0 0 4rpx 2rpx #ccc;
+  background: #fff;
+  border-radius: 5rpx;
+  padding: 25rpx;
+  box-sizing: border-box;
+}
+.tit{
+  border-bottom: 1px solid #ccc;
+  display: block;
+  font-weight: bold;
+  font-size: 34rpx;
+  padding-bottom: 20rpx;
+}
+.con{
+  font-size: 24rpx;
+}
+image{
+  display: block;
+  width: 90%;
+  margin: 40rpx auto;
+  box-shadow: 0 0 6rpx 4rpx #ccc;
+  border: 20rpx solid #fff;
+  box-sizing: border-box;
+  overflow: auto;
+}
